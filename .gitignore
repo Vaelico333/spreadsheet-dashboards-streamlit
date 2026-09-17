@@ -1,0 +1,3 @@
+streamlitvenv
+*.pyc
+__pycache__
