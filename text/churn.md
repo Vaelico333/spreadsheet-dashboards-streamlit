@@ -32,6 +32,8 @@ Posibles conclusiones y recomendaciones extraídas de los datos y las gráficas.
 - Ineficiencias
 - Predicciones
 
+---
+
 ## What I learned
 
 - Reto principal
