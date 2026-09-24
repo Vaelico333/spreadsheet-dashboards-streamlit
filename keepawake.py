@@ -5,7 +5,7 @@ URL = "https://movies-dataset-g68dfeaf04.streamlit.app/"
 
 def wake_app():
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)
+        browser = p.chromium.launch(headless=True)
         page = browser.new_page()
         page.goto(URL, wait_until="domcontentloaded", timeout=60000)
 
