@@ -22,7 +22,6 @@ def create_original_tab(name: str):
             index = 1
             for title in sections_titles:
                 with st.expander(label=title, type="step"):
-                    print(index)
                     st.write(sections[index], unsafe_allow_html=True)
                     index += 1
 
