@@ -42,8 +42,6 @@ def wake_app():
             # Si el botón no aparece en 30s, la app ya estaba activa
             if "Timeout" in str(type(e).__name__) or "timeout" in str(e).lower():
                 print(f"No hay botón de wake → app ya estaba activa ✅\nrazón:{e}")
-            elif "TargetClosedError" in str(type(e).__name__):
-                print('App activa → cerrando explorador ✅')
             else:
                 raise e
 
