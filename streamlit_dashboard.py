@@ -17,11 +17,13 @@ def create_original_tab(name: str):
 
             sections = text_project.split("---")
             st.write(sections[0], unsafe_allow_html=True)
-            sections_titles = ["**Overview**", "**The Dashboard**", 
-                               "**Business Intelligence**", "**What I learned**"]
+            sections_titles = {"**Overview**":"🔭", 
+                               "**The Dashboard**":"📊", 
+                               "**Business Intelligence**":"💶", 
+                               "**What I learned**":"📝"}
             index = 1
-            for title in sections_titles:
-                with st.expander(label=title, type="step"):
+            for title, icon in sections_titles.items():
+                with st.expander(label=title, icon=icon, type="step"):
                     st.write(sections[index], unsafe_allow_html=True)
                     index += 1
 
