@@ -38,13 +38,15 @@ def dashboards_app() -> None:
     def create_main_tab(name: str, tab) -> None:
         "Create the main tab"
         tabs_dict = {"excel":
-                    {"music":"Music streaming services study", 
-                    "netflix":"Netflix users study", 
-                    "sales":"Cosmetics Sales Study"
+                    {
+                        "inventory":"Inventory Management",
+                        "music":"Music streaming services study", 
+                        "netflix":"Netflix sales study", 
                     },
                     "gs":
-                    {"perfumes":"Perfumes sales study", 
-                    "churn":"Internet Service churn study"
+                    {
+                        "perfumes":"Perfumes sales study", 
+                        "churn":"Internet Service churn study"
                     }}
         with tab:
             with open(f"./text/front_{name}.md", encoding="UTF-8") as file:
